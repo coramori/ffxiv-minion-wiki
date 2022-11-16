@@ -27,19 +27,19 @@ const createMinionList = (data) => {
 const showMinionDetails = (minion) => {
   let div = document.createElement('div');
   getElement('#modal-body').innerHTML = '';
-  div.classList.add('card', 'col-12', 'my-4');
+  div.classList.add('card', 'col-10', 'my-4');
   let cardBody = `<div class="card-header">
       <img class ="card-img-top"src="${minion.image}" alt="h1">
     </div>
     <div class="card-body ">
-      <h3 id="minion-card-title" class="text-center">${minion.name}</h3>
+      <h3 id="minion-card-title" class="text-center"><b>${minion.name}</b></h3>
       <article> 
         <ul class="list-group">
-          <li class="list-group-item">Description: ${minion.description}</li>
-          <li class="list-group-item">Tooltip: ${minion.tooltip}</li> 
-          <li class="list-group-item">Patch: ${minion.patch}</li> 
-          <li class="list-group-item">Owned: ${minion.owned}</li> 
-          <li class="list-group-item">Item Preview: <img src="${minion.icon}"></li> 
+          <li class="list-group-item"><b>Description:</b> ${minion.description}</li>
+          <li class="list-group-item"><b>Tooltip:</b> ${minion.tooltip}</li> 
+          <li class="list-group-item"><b>Patch:</b> ${minion.patch}</li> 
+          <li class="list-group-item"><b>Owned:</b> ${minion.owned}</li> 
+          <li class="list-group-item"><b>Item Preview:</b> <img src="${minion.icon}"></li> 
           
         </ul>
       </article>
