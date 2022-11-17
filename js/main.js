@@ -1,6 +1,6 @@
 var listMinion = new Array();
 addEventListener('load', function () {
-  getAPI(URL_API_CHARACTER, createMinionList);
+  getAPI(URL_API, createMinionList);
 });
 
 const createMinionList = (data) => {
@@ -28,7 +28,9 @@ const showMinionDetails = (minion) => {
   let div = document.createElement('div');
   getElement('#modal-body').innerHTML = '';
   div.classList.add('card', 'col-10', 'my-4');
-  let cardBody = `<div class="card-header">
+  let cardBody = `
+  <div class="card-header" style="display: flex; flex-direction: column; align-items: flex-end;">
+  <button type="button" class="fave" aria-label="Fave"><img class="star" src="/img/star-solid.png" style="width: 30px;"></img></button>
       <img class ="card-img-top"src="${minion.image}" alt="h1">
     </div>
     <div class="card-body ">
@@ -40,7 +42,6 @@ const showMinionDetails = (minion) => {
           <li class="list-group-item"><b>Patch:</b> ${minion.patch}</li> 
           <li class="list-group-item"><b>Owned:</b> ${minion.owned}</li> 
           <li class="list-group-item"><b>Item Preview:</b> <img src="${minion.icon}"></li> 
-          
         </ul>
       </article>
 </div>`;
@@ -48,3 +49,31 @@ const showMinionDetails = (minion) => {
   getElement('#modal-body').appendChild(div);
   $('#charModal').modal('show');
 };
+
+// // get favorites from local storage or empty array
+// var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+// // add class 'fav' to each favorite
+// favorites.forEach(function (favorite) {
+//   document.getElementById(favorite).className = 'fav';
+// });
+// // register click event listener
+// document.querySelector('.list').addEventListener('click', function (e) {
+//   var id = e.target.id,
+//     item = e.target,
+//     index = favorites.indexOf(id);
+//   // return if target doesn't have an id (shouldn't happen)
+//   if (!id) return;
+//   // item is not favorite
+//   if (index == -1) {
+//     favorites.push(id);
+//     item.className = 'fav';
+//     // item is already favorite
+//   } else {
+//     favorites.splice(index, 1);
+//     item.className = '';
+//   }
+//   // store array in local storage
+//   localStorage.setItem('favorites', JSON.stringify(favorites));
+// });
+
+// // local storage stores strings so we use JSON to stringify for storage and parse to get out of storage

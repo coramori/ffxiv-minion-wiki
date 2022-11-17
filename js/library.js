@@ -1,5 +1,5 @@
 /* # Confs*/
-const URL_API_CHARACTER = 'https://ffxivcollect.com/api/minions';
+const URL_API = 'https://ffxivcollect.com/api/minions';
 /* # Function*/
 function getElement(q) {
   return document.querySelector(q);
