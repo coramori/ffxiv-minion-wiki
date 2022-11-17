@@ -13,7 +13,19 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 3rem;
+  margin: 7rem 0rem 3rem;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 900;
+  top: 0;
+}
+
+.logo {
+  /* margin-top: 8rem; */
+  width: 50rem;
 }
 
 #main-content {
