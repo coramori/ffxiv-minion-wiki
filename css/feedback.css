@@ -13,7 +13,7 @@ body {
 }
 
 .title {
-  font-size: 23px;
+  font-size: 20px;
   text-align: center;
   font-weight: 500;
 }
@@ -55,7 +55,6 @@ form {
 }
 .rate:not(:checked) > input {
   position: absolute;
-  top: -9999px;
 }
 .rate:not(:checked) > label {
   float: right;
@@ -85,3 +84,8 @@ form {
 }
 
 /* Rating modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+#video {
+  margin: 2rem 0 3rem;
+  border-radius: 0.5rem;
+}
