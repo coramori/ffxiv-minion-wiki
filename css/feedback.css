@@ -1,0 +1,152 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.feedback {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+#form {
+  margin-top: 1rem;
+  width: 30rem;
+}
+
+#button-send {
+  background-color: rgb(233, 233, 233);
+  color: black;
+}
+
+#button-send:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  padding: 6px 12px;
+  background-color: black;
+  color: white;
+}
+
+.form-check-input:checked {
+  background-color: #000000;
+  border-color: rgb(233, 233, 233);
+}
+
+/* Rating */
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '❤';
+}
+.rate > input:checked ~ label {
+  color: #fd3b3b;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #ff7777;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #85837c;
+}
+
+/* Rating modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+/* Video */
+#video {
+  margin: 2rem 0 3rem;
+  border-radius: 0.5rem;
+}
+
+/* Footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  width: 100vw;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#email-field {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+#newsletter {
+  display: flex;
+  justify-content: center;
+}
+
+#newsletter p {
+  width: auto;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+
+/* Email Hover */
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}

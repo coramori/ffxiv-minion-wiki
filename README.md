@@ -1,6 +1,8 @@
 # FFXIV Minion Wiki
-#### Projeto de revisão de JavaScript e consumo de API do curso +Devs2Blu 2022
-![image](https://user-images.githubusercontent.com/109560393/202292376-5eaa1a3a-50b9-44c8-854a-f434855fafaa.png)
-![image](https://user-images.githubusercontent.com/109560393/202292450-c7c44a8c-d2c6-48b6-b3da-0afa27d82982.png)
-![image](https://user-images.githubusercontent.com/109560393/202292506-4cdc7adc-e279-432d-85f5-8125d2a8f776.png)
+### Projeto de revisão do curso +Devs2Blu 2022
+Consumo de API, HTML, CSS, JavaScript, bootstrap, sistema de favoritar e local storage
 
+![image](https://user-images.githubusercontent.com/109560393/204916552-9a8f22c9-26db-4003-8835-2573ce2fa3d1.png)
+![image](https://user-images.githubusercontent.com/109560393/204916606-fe7a9550-4457-4844-8d74-1123cfcff1c1.png)
+![image](https://user-images.githubusercontent.com/109560393/204916679-f092e9a3-1e62-4290-94c5-dad4dc450172.png)
+![image](https://user-images.githubusercontent.com/109560393/204916836-c7130b91-3d3d-4171-8d91-d115cd13c148.png)

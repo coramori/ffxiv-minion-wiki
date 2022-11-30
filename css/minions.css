@@ -1,0 +1,155 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  height: 300px;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 7rem 0rem 3rem;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 900;
+  top: 0;
+}
+
+.logo {
+  /* margin-top: 8rem; */
+  width: 50rem;
+}
+
+#main-content {
+  margin: 3rem;
+}
+
+#minion-title {
+  font-size: 30px;
+  color: rgb(156, 114, 64);
+  font-weight: 600;
+}
+
+#minion-card-title {
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(39, 39, 39);
+}
+
+.card-preview {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0px 50px;
+  border: 0px;
+  box-shadow: 5px 4px 20px 0px rgb(71, 71, 71);
+  background-color: white;
+  cursor: pointer;
+}
+
+.card-preview:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  box-shadow: 5px 4px 20px 0px rgb(156, 114, 64);
+}
+
+.card-header {
+  background-color: white;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card-header {
+  border: 0px;
+}
+
+#body {
+  background-color: white;
+}
+
+#modal-body {
+  display: flex;
+  justify-content: center;
+}
+
+.fave {
+  background: none !important;
+  border: none !important;
+  cursor: pointer;
+}
+
+.fave:after {
+  background: none !important;
+  border: none !important;
+  cursor: pointer;
+}
+
+.star img {
+  background: transparent !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+/* Footer */
+#footer {
+  display: flex;
+  bottom: 0;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#email-field {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+#newsletter {
+  display: flex;
+  justify-content: center;
+}
+
+#newsletter p {
+  width: auto;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+
+/* Email Hover */
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,110 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url('/img/ffbg.png');
+  background-repeat: no-repeat;
+  display: flex;
+  align-content: flex-end;
+  flex-direction: column-reverse;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+p {
+  padding: 4px;
+  text-indent: 15px;
+  text-align: justify;
+  width: 36rem;
+}
+
+main {
+  position: fixed;
+  align-items: center;
+  width: 40rem;
+  margin: 25rem 70rem;
+}
+
+a button {
+  cursor: pointer;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 0.5rem;
+}
+
+#button:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  cursor: pointer;
+  padding: 6px 12px;
+  background-color: black;
+  color: white;
+}
+
+/* Footer */
+#footer {
+  display: flex;
+  bottom: 0;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#email-field {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+#newsletter {
+  display: flex;
+  justify-content: center;
+}
+
+#newsletter p {
+  width: auto;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+
+/* Email Hover */
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
